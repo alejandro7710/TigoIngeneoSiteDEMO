@@ -168,7 +168,7 @@ function drawPlayer() {
  contxt.beginPath();
  
  this.image = new Image();
- this.image.src = "jettip.png";
+ this.image.src = "jettip.PNG";
  
  contxt.drawImage(this.image, player.x, player.y, player.size, player.size);
  
