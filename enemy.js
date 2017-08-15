@@ -42,8 +42,7 @@ function keysUp(e) {
  
  //var img = new Image();
 //img.src = "jetti.png";
- var img = document.getElementById("lamp")
- var pat = contxt.createPattern(img, 'no-repeat');
+
 
 var player = {
 	 
