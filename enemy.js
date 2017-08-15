@@ -13,6 +13,7 @@ var level = 1;
 document.addEventListener("keydown", keysDown, false);
 document.addEventListener("keyup", keysUp, false);
 
+
 // when key is pressed down, move
 function keysDown(e) {
 	if(e.keyCode == 39){
@@ -111,6 +112,7 @@ function drawNewBad() {
 }
 
 // draws red and blue balls
+/*
 function drawRedBall() {
 	for(var i = 0; i < redNum; i++){
 		if(goodArc.state[i] == true){
@@ -121,6 +123,25 @@ function drawRedBall() {
 			contxt.arc(goodArc.x[i], goodArc.y[i], rad, 0, Math.PI * 2);
 			contxt.fillStyle = goodArc.color[trackCol % 3];
 			contxt.fill();
+			contxt.closePath();
+		}
+	}
+}
+*/
+
+
+function drawRedBall() {
+	for(var i = 0; i < redNum; i++){
+		if(goodArc.state[i] == true){
+			//Keeps track of position in color array with changing redNum size
+			var trackCol = (i + track);
+		
+			contxt.beginPath();
+			 
+ this.image = new Image();
+ this.image.src = "beer1.png";
+ 
+ contxt.drawImage(this.image, badArc.x[i], badArc.y[i],20, 40);
 			contxt.closePath();
 		}
 	}
@@ -149,7 +170,7 @@ function drawBlackBall() {
 		 contxt.beginPath();
  
  this.image = new Image();
- this.image.src = "beer1.png";
+ this.image.src = "coponieve.gif";
  
  contxt.drawImage(this.image, badArc.x[i], badArc.y[i],20, 40);
  
