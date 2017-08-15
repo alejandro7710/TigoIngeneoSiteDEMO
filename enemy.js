@@ -149,7 +149,7 @@ function drawBlackBall() {
 		 contxt.beginPath();
  
  this.image = new Image();
- this.image.src = "beer1.PNG";
+ this.image.src = "beer1.png";
  
  contxt.drawImage(this.image, badArc.x[i], badArc.y[i],20, 40);
  
@@ -168,7 +168,7 @@ function drawPlayer() {
  contxt.beginPath();
  
  this.image = new Image();
- this.image.src = "jettip.PNG";
+ this.image.src = "jettip.png";
  
  contxt.drawImage(this.image, player.x, player.y, player.size, player.size);
  
