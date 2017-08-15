@@ -177,6 +177,7 @@ function drawBlackBall() {
 	}
 }
 
+
 //var img = new Image();
 // img.src = "jetti.png";
 // draw player to canvas
