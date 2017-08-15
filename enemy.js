@@ -308,7 +308,7 @@ function draw(){
 		contxt.fillText("GAME OVER!", canvas.width/2, 175);
 		
 		contxt.font = "20px Helvetica";
-		contxt.fillText("PRESS SPACE TO PLAY", canvas.width/2, 475);
+		contxt.fillText("PRESIONE AQUI PARA JUGAR", canvas.width/2, 475);
 		
 		contxt.fillText("FINAL SCORE: " + score, canvas.width/2, 230); 
 
