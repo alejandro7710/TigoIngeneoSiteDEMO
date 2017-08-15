@@ -139,7 +139,8 @@ function drawRedBall() {
 			contxt.beginPath();
 			 
  this.image = new Image();
- this.image.src = "beer1.png";
+
+  this.image.src = "coponieve.gif";
  
  contxt.drawImage(this.image, badArc.x[i], badArc.y[i],20, 40);
 			contxt.closePath();
@@ -170,7 +171,7 @@ function drawBlackBall() {
 		 contxt.beginPath();
  
  this.image = new Image();
- this.image.src = "coponieve.gif";
+ this.image.src = "beer1.png";
  
  contxt.drawImage(this.image, badArc.x[i], badArc.y[i],20, 40);
  
