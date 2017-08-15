@@ -46,9 +46,9 @@ function keysUp(e) {
 
 var player = {
 	 
-	size: 50,
+	size: 100,
 	x: (canvas.width -30)/ 2,
-	y: canvas.height - 50,
+	y: canvas.height - 100,
 	color: "green"
 };
 
@@ -168,7 +168,7 @@ function drawPlayer() {
  contxt.beginPath();
  
  this.image = new Image();
- this.image.src = "jetti.PNG";
+ this.image.src = "jettip.PNG";
  
  contxt.drawImage(this.image, player.x, player.y, player.size, player.size);
  
