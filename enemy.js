@@ -60,8 +60,9 @@ var goodArc = {
 	y:[],
 	speed: 1,
 	//color: ["red","blue","yellow"],
-	color: ["white"],
+	color: ["yellow"],
 	state: []
+
 };
 var redNum = 0;
 
@@ -78,7 +79,11 @@ var rad = 10;
 
 // adds value to x property of goodArc
 function drawNewGood(){
+	
+
+	
 	if(Math.random() < .02){
+		
 		goodArc.x.push(Math.random() * canvas.width);
 		goodArc.y.push(0);
 		goodArc.state.push(true);
@@ -231,8 +236,10 @@ function playUpdate() {
 	for(var i = 0; i < redNum; i++){
 		// Only counts collision once
 		if(goodArc.state[i]){
-			if(player.x < goodArc.x[i] + rad && player.x + 30 + rad> goodArc.x[i] && player.y < goodArc.y[i] + rad && player.y + 30 > goodArc.y[i]){
-				score++
+			if(player.x < goodArc.x[i] + rad && player.x + 30 + rad> goodArc.x[i] && player.y < goodArc.y[i] + rad && player.y + 30 > goodArc.y[i]){	
+			//if(this.image.src=="beer1.png"){
+			//score++
+			lives--;
 				// Cycles through goodArc's color array
 				player.color = goodArc.color[(i + track) % 3];
 				goodArc.state[i] = false;
@@ -248,7 +255,8 @@ function playUpdate() {
 	}
 	for(var i = 0; i < blackNum; i++){
 		if(player.x < badArc.x[i] + rad && player.x + 30 + rad > badArc.x[i] && player.y < badArc.y[i] + rad && player.y + 30 > badArc.y[i]){
-			lives--;
+			//lives--;
+			score++;
 			player.color = badArc.color[(i+badTrack)%5];
 			badArc.y[i] = 0;
 			if(lives <= 0){
